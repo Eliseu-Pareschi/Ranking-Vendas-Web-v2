@@ -1,0 +1,571 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: #e5e7eb;
+}
+
+/* =====================
+   CONTAINER
+===================== */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* =====================
+   HEADER
+===================== */
+
+header {
+    background: linear-gradient(135deg, #020617, #1e3a8a);
+    color: white;
+    padding: 32px;
+    border-radius: 18px;
+    margin-bottom: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 12px 35px rgba(0,0,0,0.45);
+}
+
+.header-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+}
+
+.titulo-site {
+    text-align: left;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-top: 8px;
+    color: #cbd5e1;
+}
+
+/* =====================
+   BOTÃO COORDENADOR
+===================== */
+
+#btnLogin {
+    background: transparent;
+
+    color: white;
+
+    border: 2px solid #60a5fa;
+
+    padding: 14px 22px;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#btnLogin:hover {
+    background: #1e3a8a;
+    transform: translateY(-2px);
+}
+
+/* =====================
+   FILTRO
+===================== */
+
+.filtro {
+    background: #1f2937;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    margin-bottom: 24px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 16px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.filtro label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e5e7eb;
+}
+
+.filtro select {
+    width: 220px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #374151;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    outline: none;
+}
+
+.filtro select:hover {
+    background: #4b5563;
+}
+
+/* =====================
+   ATUALIZAÇÃO
+===================== */
+
+#ultimaAtualizacao {
+    color: #93c5fd;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    font-weight: bold;
+}
+
+/* =====================
+   CARD
+===================== */
+
+.card {
+    background: #1f2937;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 12px 35px rgba(0,0,0,0.45);
+}
+
+/* =====================
+   TABELA
+===================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #020617;
+    color: white;
+}
+
+th,
+td {
+    padding: 16px;
+    text-align: center;
+}
+
+tbody tr td {
+    background: #1f2937;
+
+    border-bottom: 1px solid #374151;
+
+    color: #e5e7eb;
+}
+
+/* =====================
+   PÓDIO
+===================== */
+
+.primeiro td {
+    background: #ffc107;
+    color: #212529;
+    font-weight: bold;
+}
+
+.segundo td {
+    background: #6c757d;
+    color: white;
+    font-weight: bold;
+}
+
+.terceiro td {
+    background: #cd7f32;
+    color: white;
+    font-weight: bold;
+}
+
+/* =====================
+   NOME E VENDAS
+===================== */
+
+.nome {
+    text-align: left;
+    font-weight: 600;
+}
+
+.vendas {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+footer {
+    color: #9ca3af;
+
+    text-align: center;
+
+    margin-top: 40px;
+
+    padding: 20px;
+}
+
+/* =====================
+   MODAL
+===================== */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.65);
+
+    z-index: 9999;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.modal-conteudo {
+    width: 450px;
+
+    min-height: 380px;
+
+    background: #1f2937;
+
+    color: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 45px rgba(0,0,0,0.5);
+}
+
+.cabecalho-modal {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid #374151;
+
+    padding-bottom: 15px;
+
+    margin-bottom: 20px;
+}
+
+#btnFechar {
+    background: transparent;
+
+    border: none;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    color: #9ca3af;
+}
+
+#btnFechar:hover {
+    color: #60a5fa;
+}
+
+/* =====================
+   LOGIN
+===================== */
+
+.form-login {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.form-login input {
+    padding: 12px;
+
+    border: 1px solid #374151;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    background: #111827;
+
+    color: white;
+}
+
+.form-login input:focus {
+    border-color: #60a5fa;
+
+    box-shadow: 0 0 6px rgba(96,165,250,0.4);
+}
+
+.btn-entrar {
+    background: transparent;
+
+    color: #60a5fa;
+
+    border: 2px solid #60a5fa;
+
+    padding: 12px 24px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    width: 180px;
+
+    align-self: center;
+
+    transition: 0.2s;
+}
+
+.btn-entrar:hover {
+    background: #1e3a8a;
+    color: white;
+}
+
+/* =====================
+   RESPONSIVO
+===================== */
+
+@media (max-width:768px) {
+
+    .container {
+        width: 95%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .header-esquerda {
+        flex-direction: column;
+    }
+
+    .titulo-site {
+        text-align: center;
+    }
+
+    .logo-container img {
+        width: 140px;
+    }
+
+    .filtro {
+        flex-direction: column;
+    }
+
+    .filtro select {
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .modal-conteudo {
+        width: 85%;
+    }
+}
+tbody tr{
+    transition: .25s ease;
+}
+
+tbody tr:hover td{
+    transform: scale(1.01);
+    filter: brightness(1.08);
+}
+
+#btnLogin,
+.btn-voltar,
+.btn-entrar{
+    transition:.25s;
+}
+
+#btnLogin:hover,
+.btn-voltar:hover,
+.btn-entrar:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.35);
+}
+.card,
+.card-info,
+.vendedor-card,
+.filtro,
+.filtro-admin{
+
+    transition:.25s;
+}
+
+.card:hover,
+.card-info:hover,
+.vendedor-card:hover,
+.filtro:hover,
+.filtro-admin:hover{
+
+    transform:translateY(-4px);
+}
+.barra{
+
+    transition:width .6s ease;
+}
+.primeiro td{
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.primeiro td::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:40%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.25);
+
+    transform:skewX(-25deg);
+
+    animation:brilho 3s infinite;
+}
+
+@keyframes brilho{
+
+0%{left:-120%;}
+
+40%{left:130%;}
+
+100%{left:130%;}
+
+}
+
+.subiu{
+    color:#22c55e;
+    font-weight:bold;
+    margin-left:6px;
+}
+
+.desceu{
+    color:#ef4444;
+    font-weight:bold;
+    margin-left:6px;
+}
+
+.corrida-topo {
+    background: #1f2937;
+    padding: 24px;
+    border-radius: 18px;
+    margin-bottom: 24px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+}
+
+.corrida-topo h2 {
+    margin-top: 0;
+    color: white;
+}
+
+.corrida-topo p {
+    color: #cbd5e1;
+}
+
+.corrida-topo select {
+    width: 280px;
+    max-width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #374151;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.resultado-corrida {
+    margin-top: 20px;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+.barra-corrida {
+    width: 100%;
+    height: 18px;
+    background: #374151;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progresso-corrida {
+    height: 100%;
+    background: #60a5fa;
+    border-radius: 999px;
+    transition: width 0.5s ease;
+}

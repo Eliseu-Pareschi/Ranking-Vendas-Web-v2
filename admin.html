@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Coordenador</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header class="dashboard-header">
+
+            <div class="header-esquerda">
+
+                <div class="logo-container">
+                    <img src="img/carso-logo.png" alt="Carso Instalações">
+                </div>
+
+                <div>
+                    <h1>Painel do Coordenador</h1>
+                    <p>Acompanhamento gerencial das vendas</p>
+                </div>
+
+            </div>
+
+            <a href="index.html" class="btn-voltar">
+                Voltar para o Ranking
+            </a>
+
+        </header>
+
+        <section class="filtro-admin">
+
+            <section class="dashboard-status">
+                <div class="status-card">
+
+                    <div class="status-esquerda">
+                        🟢 <strong>Sistema Online</strong>
+                    </div>
+
+                    <div class="status-direita" id="ultimaAtualizacaoDashboard">
+                        Última atualização...
+                    </div>
+
+                </div>
+            </section>
+
+            <label for="mesAdmin">Selecione o mês:</label>
+
+            <select id="mesAdmin">
+                <option value="JANEIRO">Janeiro</option>
+                <option value="FEVEREIRO">Fevereiro</option>
+                <option value="MARCO">Março</option>
+                <option value="ABRIL">Abril</option>
+                <option value="MAIO">Maio</option>
+                <option value="JUNHO">Junho</option>
+                <option value="JULHO">Julho</option>
+                <option value="AGOSTO">Agosto</option>
+                <option value="SETEMBRO">Setembro</option>
+                <option value="OUTUBRO">Outubro</option>
+                <option value="NOVEMBRO">Novembro</option>
+                <option value="DEZEMBRO">Dezembro</option>
+            </select>
+
+        </section>
+
+        <section class="dashboard-cards">
+
+            <div class="card-info">
+                <h3>Total de vendas</h3>
+                <p id="totalVendas">0</p>
+            </div>
+
+            <div class="card-info">
+                <h3>Melhor vendedor</h3>
+                <p id="melhorVendedor">-</p>
+            </div>
+
+            <div class="card-info">
+                <h3>Quantidade de vendedores</h3>
+                <p id="quantidadeVendedores">0</p>
+            </div>
+
+        </section>
+
+        <section class="dashboard-grafico">
+
+            <h2> Vendas diárias do mês</h2>
+
+            <div class="grafico-container" id="graficoTop10"></div>
+
+        </section>
+
+        <section class="dashboard-top3">
+
+            <h2> Indicadores do mês</h2>
+
+            <div class="top3-container">
+
+                <div class="vendedor-card">
+                    <h3> Melhor dia do mês</h3>
+                    <p id="primeiroLugar">-</p>
+                </div>
+
+                <div class="vendedor-card">
+                    <h3> Média diária</h3>
+                    <p id="segundoLugar">-</p>
+                </div>
+
+                <div class="vendedor-card">
+                    <h3> Meta do mês</h3>
+
+                    <div class="meta-box">
+                        <input 
+                            type="number" 
+                            id="inputMetaMes" 
+                            placeholder="Meta até 1000"
+                            min="1"
+                            max="1000"
+                        >
+
+                        <button id="btnSalvarMeta">Fixar</button>
+                    </div>
+
+                    <p id="terceiroLugar">Sem meta definida</p>
+
+                    <div class="barra-meta-area">
+                        <div class="barra-meta" id="barraMeta"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script type="module" src="auth-guard.js"></script>
+    <script src="admin.js?v=2"></script>
+
+</body>
+
+</html>

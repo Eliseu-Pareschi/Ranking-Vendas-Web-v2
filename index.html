@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking de Vendas</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            
+            <div class="header-esquerda">
+
+                <div class="logo-container">
+                    <img src="img/carso-logo.png" alt="Carso Instalações">
+                </div>
+
+                <div class="titulo-site">
+                    <h1>Ranking de Vendas</h1>
+                    <p>Acompanhamento em tempo real</p>
+                </div>
+
+            </div>
+
+            <button id="btnLogin">
+                Área do Coordenador
+            </button>
+
+        </header>
+
+        <div class="filtro">
+
+            <label for="mesFiltro">Selecione o período:</label>
+
+            <select id="mesFiltro">
+                <option value="JANEIRO">Janeiro</option>
+                <option value="FEVEREIRO">Fevereiro</option>
+                <option value="MARCO">Março</option>
+                <option value="ABRIL">Abril</option>
+                <option value="MAIO">Maio</option>
+                <option value="JUNHO">Junho</option>
+                <option value="JULHO">Julho</option>
+                <option value="AGOSTO">Agosto</option>
+                <option value="SETEMBRO">Setembro</option>
+                <option value="OUTUBRO">Outubro</option>
+                <option value="NOVEMBRO">Novembro</option>
+                <option value="DEZEMBRO">Dezembro</option>
+            </select>
+
+        </div>
+
+        <div id="ultimaAtualizacao"></div>
+        <section class="corrida-topo">
+
+    <h2>Minha corrida até o topo</h2>
+
+    <p>Selecione seu nome e veja o quanto falta para alcançar o líder.</p>
+
+    <select id="selectVendedor">
+        <option value="">Selecione um vendedor</option>
+    </select>
+
+    <div id="resultadoCorrida" class="resultado-corrida">
+        Escolha um vendedor para começar.
+    </div>
+
+</section>
+
+        <div class="card">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabela-ranking">
+                    <tr>
+                        <td colspan="3">Carregando ranking...</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <div id="modalLogin" class="modal">
+
+        <div class="modal-conteudo">
+
+            <div class="cabecalho-modal">
+                <h2>Área do Coordenador</h2>
+                <button id="btnFechar">X</button>
+            </div>
+
+            <form class="form-login" id="formLogin">
+
+                <label for="emailLogin">E-mail</label>
+                <input type="email" id="emailLogin">
+
+                <span id="erroEmail"></span>
+
+                <label for="senhaLogin">Senha</label>
+                <input type="password" id="senhaLogin">
+
+                <span id="erroSenha"></span>
+
+                <button class="btn-entrar" type="submit">
+                    Acessar painel
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+    <footer>
+        <p>RankingVendasWeb © 2026</p>
+        <p>Desenvolvido por Eliseu Pareschi</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="auth.js"></script>
+
+</body>
+
+</html>

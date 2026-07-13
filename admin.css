@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: #e5e7eb;
+}
+
+.dashboard {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.dashboard-header {
+    background: linear-gradient(135deg, #020617, #1e3a8a);
+    color: white;
+    padding: 32px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.45);
+}
+
+.header-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo-container img {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+}
+
+.dashboard-header h1 {
+    margin: 0;
+}
+
+.dashboard-header p {
+    margin-top: 8px;
+    color: #cbd5e1;
+}
+
+.btn-voltar {
+    color: white;
+    background: transparent;
+    border: 2px solid #60a5fa;
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-voltar:hover {
+    background: #1e3a8a;
+    transform: translateY(-2px);
+}
+
+.filtro-admin {
+    margin-top: 24px;
+    background: #1f2937;
+    border-radius: 18px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+.filtro-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.filtro-direita {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.status-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #22c55e;
+    font-size: 18px;
+}
+
+.status-direita {
+    color: #93c5fd;
+    font-weight: 600;
+}
+
+.filtro-admin label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e5e7eb;
+}
+
+.filtro-admin select {
+    width: 220px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #374151;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.filtro-admin select:hover {
+    background: #4b5563;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
+    margin-top: 28px;
+}
+
+.card-info,
+.grafico-container {
+    background: #1f2937;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+}
+
+.card-info {
+    padding: 28px;
+    text-align: center;
+}
+
+.card-info h3 {
+    margin: 0 0 12px 0;
+    color: #9ca3af;
+}
+
+.card-info p {
+    margin: 0;
+    font-size: 34px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+.dashboard-grafico,
+.dashboard-top3 {
+    margin-top: 30px;
+}
+
+.dashboard-grafico h2,
+.dashboard-top3 h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.grafico-container {
+    color: #e5e7eb;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.linha-grafico {
+    display: grid;
+    grid-template-columns: 250px 1fr 50px;
+    gap: 14px;
+    align-items: center;
+}
+
+.linha-grafico span {
+    font-weight: 600;
+}
+
+.linha-grafico strong {
+    color: #60a5fa;
+}
+
+.barra-area {
+    background: #374151;
+    border-radius: 12px;
+    height: 14px;
+}
+
+.barra {
+    height: 14px;
+    background: #2563eb;
+    border-radius: 12px;
+}
+
+/* INDICADORES */
+
+.top3-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.vendedor-card {
+    padding: 28px;
+    border-radius: 18px;
+    text-align: center;
+    background: #1f2937;
+    border: 1px solid #374151;
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.35),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    transition: all .25s ease;
+}
+
+.vendedor-card:hover {
+    transform: translateY(-4px);
+}
+
+.vendedor-card:nth-child(1) {
+    border-left: 5px solid #3b82f6;
+}
+
+.vendedor-card:nth-child(2) {
+    border-left: 5px solid #10b981;
+}
+
+.vendedor-card:nth-child(3) {
+    border-left: 5px solid #8b5cf6;
+}
+
+.vendedor-card h3 {
+    color: #cbd5e1;
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.vendedor-card p {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* META */
+
+.meta-box {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.meta-box input {
+    flex: 1;
+    padding: 10px;
+    background: #111827;
+    color: white;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    outline: none;
+}
+
+.meta-box input:focus {
+    border-color: #60a5fa;
+}
+
+.meta-box button {
+    padding: 10px 16px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.meta-box button:hover {
+    background: #1d4ed8;
+}
+
+.barra-meta-area {
+    width: 100%;
+    height: 12px;
+    margin-top: 15px;
+    background: #374151;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.barra-meta {
+    height: 100%;
+    width: 0%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #10b981, #22c55e);
+    transition: width .4s ease;
+}
+
+/* RESPONSIVO */
+
+@media (max-width:768px) {
+    .dashboard {
+        width: 95%;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .header-esquerda {
+        flex-direction: column;
+    }
+
+    .logo-container img {
+        width: 140px;
+    }
+
+    .filtro-admin {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .filtro-esquerda,
+    .filtro-direita {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .filtro-admin select {
+        width: 100%;
+    }
+
+    .dashboard-cards,
+    .top3-container {
+        grid-template-columns: 1fr;
+    }
+
+    .linha-grafico {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .linha-grafico strong {
+        align-self: flex-end;
+        margin-top: -26px;
+        margin-bottom: 8px;
+    }
+
+    .barra-area {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .meta-box {
+        flex-direction: column;
+    }
+}
