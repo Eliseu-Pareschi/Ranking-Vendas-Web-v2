@@ -5,6 +5,25 @@
 Projeto desenvolvido para transformar o controle de vendas analógico e planilhas locais em uma ferramenta web acessível, atualizada automaticamente e focada em inteligência de dados.
 
 ---
+📷 **Galeria do Sistema em Funcionamento**
+
+| Painel Principal | Ranking Geral |
+| :---: | :---: |
+| ![Painel](assets/painel%20.png) | ![Ranking](assets/ranking.png) |
+
+| Função Minha Corrida | Model do Dashboard |
+| :---: | :---: |
+| ![Minha Corrida](assets/minha%20corrida.png) | ![Model](assets/model.png) |
+
+### 📸 Métricas e Gráficos Analíticos
+<details>
+  <summary>Clique aqui para ver o acompanhamento de vendas e indicadores</summary>
+  
+  ![Indicadores](assets/indicadores.png)
+  ![Vendas Diárias](assets/vendas%20diarias.png)
+</details>
+
+---
 
 ## 📌 Contexto e Evolução do Projeto
 
@@ -55,6 +74,8 @@ HTML / CSS / JavaScript
 ↓
 Aplicação Web
 ```
+---
+
 ## 🎯 Objetivo do Projeto
 
 Demonstrar a evolução prática de uma solução local baseada em Excel para uma aplicação web moderna e escalável, aplicando conceitos de automação, computação em nuvem, banco de dados NoSQL e desenvolvimento web focado em resolver problemas reais de negócios.
