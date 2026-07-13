@@ -44,6 +44,7 @@ O controle de vendas original era feito de forma analógica (anotado em uma lous
 ---
 
 ## 🏗️ Fluxo da Arquitetura Atual
+```text
 Excel (.xlsm)
 ↓
 VBA
@@ -53,7 +54,7 @@ Firebase Realtime Database
 HTML / CSS / JavaScript
 ↓
 Aplicação Web
-
+```
 ## 🎯 Objetivo do Projeto
 
 Demonstrar a evolução prática de uma solução local baseada em Excel para uma aplicação web moderna e escalável, aplicando conceitos de automação, computação em nuvem, banco de dados NoSQL e desenvolvimento web focado em resolver problemas reais de negócios.
